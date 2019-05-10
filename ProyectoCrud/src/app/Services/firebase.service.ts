@@ -17,6 +17,7 @@ export class FirebaseService {
   constructor(public firebaseService: AngularFirestore) {
     this.productosCollection = firebaseService.collection<Producto>('Productos');
   }
+  
 
   getProductos() {
     return this.productosCollection.snapshotChanges();
