@@ -1,0 +1,33 @@
+<ion-header>
+    <ion-toolbar color= "primary">
+        <ion-buttons>  
+          <ion-button (click)="dismiss()">
+              <ion-icon name="arrow-back"></ion-icon>
+          </ion-button>
+          <ion-title>Modificar</ion-title>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item-group>
+        <ion-item-divider color="primary">
+          <ion-label> Nombre producto </ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-label> {{  varProductos.NombreProducto }} </ion-label>
+        </ion-item>
+        <ion-item-divider color="primary">
+          <ion-label> Marca </ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-label> {{  varProductos.Marca }} </ion-label>
+        </ion-item>
+        <ion-item-divider color="primary">
+            <ion-label> Cantidad </ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-label> {{  varProductos.Cantidad }} </ion-label>
+        </ion-item>
+    </ion-item-group>
+</ion-content>

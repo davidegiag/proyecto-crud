@@ -1,0 +1,34 @@
+<ion-header>
+  <ion-toolbar color= "primary">
+      <ion-buttons>  
+        <ion-button (click)="dismiss()">
+            <ion-icon name="arrow-back"></ion-icon>
+        </ion-button>
+        <ion-title>Modificar</ion-title>
+      </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item-group>
+        <ion-item>
+          <ion-label color="primary">Nombre Producto: </ion-label>
+          <ion-input  [(ngModel)]="NombreProducto" placeholder="{{  varProducto.NombreProducto }}"> 
+          </ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-label color="primary">Marca: </ion-label>
+          <ion-input [(ngModel)]="Marca" placeholder="{{  varProducto.Marca }}">  </ion-input>
+        </ion-item>
+        <ion-item>
+            <ion-label color="primary">Cantidad: </ion-label>
+          <ion-input [(ngModel)]="Cantidad" placeholder="{{  varProducto.Cantidad }}">  
+          </ion-input>
+        </ion-item>
+    </ion-item-group>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+          <ion-icon name="checkmark" (click)="ModificarProducto()"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>

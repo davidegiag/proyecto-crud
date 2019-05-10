@@ -1,0 +1,38 @@
+<ion-header>
+    <ion-toolbar color= "primary">
+        <ion-buttons>  
+          <ion-button (click)="dismiss()">
+              <ion-icon name="arrow-back"></ion-icon>
+          </ion-button>
+          <ion-title>Marca</ion-title>
+        </ion-buttons>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item-group>
+        <ion-item-divider color="primary">
+          <ion-label> Nombre producto </ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-input [(ngModel)]="NombreProducto" placeholder="Introduzca el nombre del producto" >  </ion-input>
+        </ion-item>
+        <ion-item-divider color="primary">
+          <ion-label> Marca </ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-input [(ngModel)]="Marca" placeholder="Introduzca la marca">  </ion-input>
+        </ion-item>
+        <ion-item-divider color="primary">
+            <ion-label> Cantidad </ion-label>
+        </ion-item-divider>
+        <ion-item>
+          <ion-input [(ngModel)]="Cantidad" placeholder="Introduzca la cantidad">  </ion-input>
+        </ion-item>
+    </ion-item-group>
+    <ion-fab vertical="bottom" horizontal="end" slot="fixed">
+        <ion-fab-button>
+            <ion-icon name="save" (click)="CrearProducto()"></ion-icon>
+        </ion-fab-button>
+    </ion-fab>
+</ion-content>
